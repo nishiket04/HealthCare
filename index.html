@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!-- <?php
+include('src/php/login.php');
+include('src/php/signup.php');
+include('src/php/dbconnect.php');
+?> -->
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - bootstrap 4 navbar</title>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -16,9 +18,10 @@
 </head>
 
 <body>
+
     <!-- partial:index.partial.html -->
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+        <a class="navbar-brand navbar-logo" href="#">HMIS</a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <i class="fas fa-bars text-white"></i>
@@ -30,10 +33,10 @@
                     <div class="right"></div>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
@@ -42,7 +45,7 @@
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)" ; onclick="location.href='login.html'"><i
+                    <a class="nav-link" href="javascript:void(0)" ; onclick="location.href='login.php'"><i
                             class="fa fa-sign-in"></i>LogIn</a>
                 </li>
                 <!-- <li class="nav-item">
