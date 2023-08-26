@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
-    
+
+}
+body{
+    background-image:url(/src/pic/background\ patient1.jpg) no-repeat;
+
 }
 #para{
     font-size: 30px;
@@ -14,4 +18,15 @@ html{
 .link:hover{
     text-decoration: none;
     color: white;
+}
+#homeee::before {
+    content: "";
+    background: url(/src/pic/background_patient1-removebg-preview.png) no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 80%;
+    z-index: -1;
+    top:100px;
+    left: 220px;
+
 }
