@@ -75,24 +75,24 @@ include('src/php/dbconnect.php');
         <form class="forms_form" method="POST" action="src/php/login.php">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+              <input type="email" placeholder="Email" name="email" class="forms_field-input" required autofocus />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" placeholder="Password" name="password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
             <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <input type="submit" value="Log In" class="forms_buttons-action">
+            <input type="submit" value="Log In" name="submit" class="forms_buttons-action">
           </div>
         </form>
       </div>
-      <div class="user_forms-signup" method="POST" action="src/php/signup.php">
+      <div class="user_forms-signup">
         <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form">
+        <form class="forms_form"  method="POST" action="src/php/signup.php">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" placeholder="Full Name" class="forms_field-input" required />
+              <input type="text" placeholder="Full Name" name="name"  class="forms_field-input" required />
             </div>
             <div class="forms_field">
               <input type="email" placeholder="Email" name="email" class="forms_field-input" required />
@@ -102,7 +102,7 @@ include('src/php/dbconnect.php');
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
+            <input type="submit" value="Sign up" name="submit" class="forms_buttons-action">
           </div>
         </form>
       </div>

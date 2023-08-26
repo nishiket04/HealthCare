@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
   // $enroll=$row['enrollment'];
   // echo $enroll;
 
-  $query = "SELECT * from users WHERE email like ($email) and password like ($password)";
+  $query = "SELECT * from regform WHERE email like ('$email') and password like ('$password')";
 
   $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
