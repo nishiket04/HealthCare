@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+#para{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 36px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    text-decoration: none;
+    color: white;
+}
