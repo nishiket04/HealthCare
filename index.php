@@ -9,8 +9,6 @@ include('src/php/dbconnect.php');
   <meta charset="UTF-8">
   <title>Login and Sign up</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="/src/css/main.css">
-<link rel="stylesheet" href="/src/css/style.css">
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
 <link rel="stylesheet" href="src/css/main.css">
@@ -23,7 +21,7 @@ include('src/php/dbconnect.php');
 <body>
 <!-- navvv -->
 <nav class="navbar navbar-expand-custom navbar-mainbg">
-  <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+  <a class="navbar-brand navbar-logo" href="#">HMIS</a>
   <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <i class="fas fa-bars text-white"></i>
   </button>
@@ -102,7 +100,7 @@ include('src/php/dbconnect.php');
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" name="submit" class="forms_buttons-action">
+           <a href="userselect.html" ><input type="submit" value="Sign up" name="submit" class="forms_buttons-action"></a>
           </div>
         </form>
       </div>

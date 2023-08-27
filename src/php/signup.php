@@ -14,8 +14,8 @@ if (isset($_POST['submit'])) {
 
 
   $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
-  // $_SESSION['name'] = $name;
   $_SESSION['email'] = $email;
-  // $_SESSION['password'] = $password;
+  header("Location: ../../userselect.php");
 }
+  
 ?>
