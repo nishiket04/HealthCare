@@ -22,7 +22,7 @@ $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 
 // final full name
-$name="$fname $lname";
+$name="$fname  $lname";
 
 //gender
 $sex=$_POST['sex'];

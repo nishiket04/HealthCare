@@ -634,7 +634,7 @@ include('src/php/detail.php');
           </div>
         </li>
         <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_fullname"
-          id="parent_name"><label class="form-label form-label-left form-label-auto" id="label_263" for="first_263"> Parent
+          id="id_263"><label class="form-label form-label-left form-label-auto" id="label_263" for="first_263"> Parent
             Name </label>
           <div id="cid_263" class="form-input always-hidden" data-layout="full">
             <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
