@@ -1,0 +1,83 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%)no-repeat center center/cover ; */
+}
+
+.card {
+    margin: auto;
+    top: 100px;
+    max-width: 551px;
+    width: 100%;
+    background: #5161ce;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.);
+}
+
+.card .title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card .content {
+    margin-top: 20px;
+}
+
+.card label.box {
+    background: #ddd;
+    display: flex;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.card label.box:hover {
+    background: white;
+}
+
+.card label.box .course {
+    margin: 12px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.card label.box .circle {
+    height: 22px;
+    width: 22px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 5px solid transparent;
+    display: inline-block;
+    box-shadow: inset -4px -4px 10px rgb(0, 0, 0, 0.2);
+    transition: all 0.25s ease;
+}
+
+#one:checked~label.first,
+#two:checked~label.second,
+#three:checked~label.third {
+    border-color: white;
+}
+
+#one:checked~label.first .circle,
+#two:checked~label.second .circle,
+#three:checked~label.third .circle {
+    border-color: #5161ce;
+    background: #fff;
+}
+
+.card input[type="radio"] {
+    display: none;
+}
