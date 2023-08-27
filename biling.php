@@ -1,3 +1,7 @@
+
+<?php
+include('src/php/detail.php');
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
