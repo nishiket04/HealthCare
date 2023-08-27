@@ -1,3 +1,7 @@
+<?php
+include('src/php/detail.php');
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en-US" class="supernova">
 
@@ -243,13 +247,13 @@
       setTimeout(function () {
         $('input_239').hint('ex: 23');
       }, 20);
-      JotForm.setPhoneMaskingValidator('input_235_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
+      JotForm.setPhoneMaskingValidator('input_235_full');
       setTimeout(function () {
         $('input_225').hint('ex: myname@example.com');
       }, 20);
-      JotForm.setPhoneMaskingValidator('input_264_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
+      JotForm.setPhoneMaskingValidator('input_264_full');
       if (window.JotForm && JotForm.accessible) $('input_73').setAttribute('tabindex', 0);
-      JotForm.setPhoneMaskingValidator('input_74_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
+      JotForm.setPhoneMaskingValidator('input_74_full');
       JotForm.setPhoneMaskingValidator('input_250_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
       if (window.JotForm && JotForm.accessible) $('input_271').setAttribute('tabindex', 0);
       JotForm.setPhoneMaskingValidator('input_272_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
@@ -279,8 +283,8 @@
 </head>
 
 <body>
-  <form class="jotform-form" action="https://submit.jotform.com/submit/232371540161446" method="post"
-    name="form_232371540161446" id="232371540161446" accept-charset="utf-8" autocomplete="on"><input type="hidden"
+  <form class="jotform-form" action="src/php/detail.php" method="post"
+    name="detailform" id="232371540161446" accept-charset="utf-8" autocomplete="on"><input type="hidden"
       name="formID" value="232371540161446" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden"
       id="cardinalOrderNumber" value="" />
     <div role="main" class="form-all">
@@ -296,64 +300,43 @@
           </div>
         </li>
         <li class="form-line allowTime" data-type="control_datetime" id="id_238"><label
-            class="form-label form-label-left form-label-auto" id="label_238" for="lite_mode_238"> Registration Date and
-            Time </label>
+            class="form-label form-label-left form-label-auto" id="label_238" for="lite_mode_238"> Registration Date</label>
           <div id="cid_238" class="form-input" data-layout="full">
             <div data-wrapper-react="true" class="extended">
               <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input
                     type="tel" class="form-textbox validate[limitDate]" id="month_238"
-                    name="q238_registrationDate238[month]" size="2" data-maxlength="2" data-age="" maxLength="2"
+                    name="reg_month" size="2" data-maxlength="2" data-age="" maxLength="2"
                     value="08" autoComplete="off" aria-labelledby="label_238 sublabel_238_month" /><span
                     class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="month_238"
                     id="sublabel_238_month" style="min-height:13px" aria-hidden="false">Month</label></span><span
                   class="form-sub-label-container" style="vertical-align:top"><input type="tel"
                     class="currentDate form-textbox validate[limitDate]" id="day_238"
-                    name="q238_registrationDate238[day]" size="2" data-maxlength="2" data-age="" maxLength="2"
+                    name="reg_day" size="2" data-maxlength="2" data-age="" maxLength="2"
                     value="26" autoComplete="off" aria-labelledby="label_238 sublabel_238_day" /><span
                     class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="day_238"
                     id="sublabel_238_day" style="min-height:13px" aria-hidden="false">Day</label></span><span
                   class="form-sub-label-container" style="vertical-align:top"><input type="tel"
-                    class="form-textbox validate[limitDate]" id="year_238" name="q238_registrationDate238[year]"
+                    class="form-textbox validate[limitDate]" id="year_238" name="reg_year"
                     size="4" data-maxlength="4" data-age="" maxLength="4" value="2023" autoComplete="off"
                     aria-labelledby="label_238 sublabel_238_year" /><label class="form-sub-label" for="year_238"
                     id="sublabel_238_year" style="min-height:13px" aria-hidden="false">Year</label></span></div><span
                 class="form-sub-label-container" style="vertical-align:top"><input type="text"
                   class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_238" size="12"
-                  data-maxlength="12" maxLength="12" data-age="" value="08-26-2023" data-format="mmddyyyy"
-                  data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off"
+                  data-maxlength="12" maxLength="12" data-age="" value="08-26-2023" data-format="ddmmyyyy"
+                  data-seperator="-" placeholder="DD-MM-YYYY" autoComplete="off"
                   aria-labelledby="label_238 sublabel_238_litemode" /><img
                   class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_238_pick"
                   src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true"
-                  data-allow-time="Yes" data-version="v2" /><label class="form-sub-label" for="lite_mode_238"
-                  id="sublabel_238_litemode" style="min-height:13px" aria-hidden="false">Date</label></span><span
-                class="allowTime-container timeAMPM">
-                <div data-wrapper-react="true"><span class="form-sub-label-container hasAMPM"
-                    style="vertical-align:top"><input type="text" class="currentTime time-dropdown form-textbox"
-                      id="input_238_timeInput" name="q238_registrationDate238[timeInput]" placeholder="HH : MM"
-                      aria-labelledby="label_238 sublabel_238_hour" data-mask="hh:MM" value="12:50"
-                      data-version="v2" /><input type="hidden" class="form-hidden-time" id="input_238_hourSelect"
-                      name="q238_registrationDate238[hour]" value="12" /><input type="hidden" class="form-hidden-time"
-                      id="input_238_minuteSelect" name="q238_registrationDate238[min]" value="50" /><label
-                      data-seperate-translate="true" class="form-sub-label" for="input_238_timeInput"
-                      id="sublabel_238_hour" style="min-height:13px" aria-hidden="false">Hour
-                      Minutes</label></span><span class="form-sub-label-container" style="vertical-align:top"><select
-                      class="time-dropdown form-dropdown" id="input_238_ampm" name="q238_registrationDate238[ampm]"
-                      data-component="time-ampm" aria-labelledby="label_238 sublabel_238_ampm">
-                      <option selected="" value="AM">AM</option>
-                      <option value="PM">PM</option>
-                    </select><label class="form-sub-label" for="input_238_ampm" id="sublabel_238_ampm"
-                      style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap"
-                      aria-hidden="false">AM/PM Option</label></span></div>
-              </span>
+                  data-allow-time="Yes" data-version="v2" /></span>
             </div>
           </div>
         </li>
         <li class="form-line" data-type="control_number" id="id_239"><label
-            class="form-label form-label-left form-label-auto" id="label_239" for="input_239"> Health Care Number
+            class="form-label form-label-left form-label-auto" id="label_239" for="input_239"> Aayushmaan card number
           </label>
           <div id="cid_239" class="form-input" data-layout="half"> <input type="number" id="input_239"
-              name="q239_healthCare" data-type="input-number" class=" form-number-input form-textbox validate[Numeric]"
-              data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: 23" data-component="number"
+              name="aayushmaan_no" data-type="input-number" class=" form-number-input form-textbox validate[Numeric]"
+              data-defaultvalue="" style="width:310px" size="310" value="" placeholder="xxxxxxxxxxxxxx" data-component="number"
               aria-labelledby="label_239" step="any" /> </div>
         </li>
         <li class="form-line" data-type="control_divider" id="id_261">
@@ -367,12 +350,12 @@
             id="label_3" for="first_3"> Patient Name </label>
           <div id="cid_3" class="form-input" data-layout="full">
             <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
-                data-input-type="first"><input type="text" id="first_3" name="q3_patientName[first]"
+                data-input-type="first"><input type="text" id="first_3" name="fname"
                   class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value=""
                   data-component="first" aria-labelledby="label_3 sublabel_3_first" /><label class="form-sub-label"
                   for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false">First
                   Name</label></span><span class="form-sub-label-container" style="vertical-align:top"
-                data-input-type="last"><input type="text" id="last_3" name="q3_patientName[last]" class="form-textbox"
+                data-input-type="last"><input type="text" id="last_3" name="lname" class="form-textbox"
                   data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" value=""
                   data-component="last" aria-labelledby="label_3 sublabel_3_last" /><label class="form-sub-label"
                   for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false">Last Name</label></span>
@@ -382,35 +365,35 @@
         <li class="form-line" data-type="control_dropdown" id="id_231"><label
             class="form-label form-label-left form-label-auto" id="label_231" for="input_231"> Sex </label>
           <div id="cid_231" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_231"
-              name="q231_sex" style="width:310px" data-component="dropdown" aria-label="Sex">
+              name="sex" style="width:310px" data-component="dropdown" aria-label="Sex">
               <option value="">Please Select</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="N/A">N/A</option>
+              <option value="Male" name="male">Male</option>
+              <option value="Female" name="female">Female</option>
+              <option value="N/A" name="na">N/A</option>
             </select> </div>
         </li>
         <li class="form-line" data-type="control_birthdate" id="id_6"><label class="form-label form-label-left"
             id="label_6" for="input_6"> Date of Birth </label>
           <div id="cid_6" class="form-input" data-layout="full">
             <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"><select
-                  name="q6_dateOf[month]" id="input_6_month" class="form-dropdown" data-component="birthdate-month"
+                  name="dob_month" id="input_6_month" class="form-dropdown" data-component="birthdate-month"
                   aria-labelledby="label_6 sublabel_6_month">
                   <option></option>
-                  <option value="January">January</option>
-                  <option value="February">February</option>
-                  <option value="March">March</option>
-                  <option value="April">April</option>
-                  <option value="May">May</option>
-                  <option value="June">June</option>
-                  <option value="July">July</option>
-                  <option value="August">August</option>
-                  <option value="September">September</option>
-                  <option value="October">October</option>
-                  <option value="November">November</option>
-                  <option value="December">December</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
                 </select><label class="form-sub-label" for="input_6_month" id="sublabel_6_month" style="min-height:13px"
                   aria-hidden="false">Month</label></span><span class="form-sub-label-container"
-                style="vertical-align:top"><select name="q6_dateOf[day]" id="input_6_day" class="form-dropdown"
+                style="vertical-align:top"><select name="dob_day" id="input_6_day" class="form-dropdown"
                   data-component="birthdate-day" aria-labelledby="label_6 sublabel_6_day">
                   <option></option>
                   <option value="1">1</option>
@@ -446,7 +429,7 @@
                   <option value="31">31</option>
                 </select><label class="form-sub-label" for="input_6_day" id="sublabel_6_day" style="min-height:13px"
                   aria-hidden="false">Day</label></span><span class="form-sub-label-container"
-                style="vertical-align:top"><select name="q6_dateOf[year]" id="input_6_year" class="form-dropdown"
+                style="vertical-align:top"><select name="dob_year" id="input_6_year" class="form-dropdown"
                   data-component="birthdate-year" aria-labelledby="label_6 sublabel_6_year">
                   <option></option>
                   <option value="2023">2023</option>
@@ -561,15 +544,15 @@
             class="form-label form-label-left form-label-auto" id="label_235" for="input_235_full"> Phone Number
           </label>
           <div id="cid_235" class="form-input" data-layout="half"> <span class="form-sub-label-container"
-              style="vertical-align:top"><input type="tel" id="input_235_full" name="q235_phoneNumber235[full]"
+              style="vertical-align:top"><input type="tel" id="input_235_full" name="mobile"
                 data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue=""
-                autoComplete="section-input_235 tel-national" style="width:310px" data-masked="true" value=""
-                placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_235" /></span> </div>
+                autoComplete="" style="width:310px" data-masked="true" value=""
+                placeholder="" data-component="phone" aria-labelledby="label_235" /></span> </div>
         </li>
         <li class="form-line" data-type="control_email" id="id_225"><label class="form-label form-label-left"
             id="label_225" for="input_225"> Email </label>
           <div id="cid_225" class="form-input" data-layout="half"> <span class="form-sub-label-container"
-              style="vertical-align:top"><input type="email" id="input_225" name="q225_email"
+              style="vertical-align:top"><input type="email" id="input_225" name="mail"
                 class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value=""
                 placeholder="ex: myname@example.com" data-component="email"
                 aria-labelledby="label_225 sublabel_input_225" /><label class="form-sub-label" for="input_225"
@@ -584,7 +567,7 @@
               <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
                   class="form-address-line form-address-street-line jsTest-address-lineField"><span
                     class="form-sub-label-container" style="vertical-align:top"><input type="text"
-                      id="input_234_addr_line1" name="q234_address234[addr_line1]"
+                      id="input_234_addr_line1" name="add1"
                       class="form-textbox form-address-line" data-defaultvalue=""
                       autoComplete="section-input_234 address-line1" value="" data-component="address_line_1"
                       aria-labelledby="label_234 sublabel_234_addr_line1" required="" /><label class="form-sub-label"
@@ -593,7 +576,7 @@
               <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
                   class="form-address-line form-address-street-line jsTest-address-lineField"><span
                     class="form-sub-label-container" style="vertical-align:top"><input type="text"
-                      id="input_234_addr_line2" name="q234_address234[addr_line2]"
+                      id="input_234_addr_line2" name="add2"
                       class="form-textbox form-address-line" data-defaultvalue=""
                       autoComplete="section-input_234 address-line2" value="" data-component="address_line_2"
                       aria-labelledby="label_234 sublabel_234_addr_line2" /><label class="form-sub-label"
@@ -602,14 +585,14 @@
               <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
                   class="form-address-line form-address-city-line jsTest-address-lineField "><span
                     class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_234_city"
-                      name="q234_address234[city]" class="form-textbox form-address-city" data-defaultvalue=""
+                      name="add_city" class="form-textbox form-address-city" data-defaultvalue=""
                       autoComplete="section-input_234 address-level2" value="" data-component="city"
                       aria-labelledby="label_234 sublabel_234_city" required="" /><label class="form-sub-label"
                       for="input_234_city" id="sublabel_234_city" style="min-height:13px"
                       aria-hidden="false">City</label></span></span><span
                   class="form-address-line form-address-state-line jsTest-address-lineField "><span
                     class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_234_state"
-                      name="q234_address234[state]" class="form-textbox form-address-state" data-defaultvalue=""
+                      name="add_state" class="form-textbox form-address-state" data-defaultvalue=""
                       autoComplete="section-input_234 address-level1" value="" data-component="state"
                       aria-labelledby="label_234 sublabel_234_state" required="" /><label class="form-sub-label"
                       for="input_234_state" id="sublabel_234_state" style="min-height:13px" aria-hidden="false">State /
@@ -617,7 +600,7 @@
               <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
                   class="form-address-line form-address-zip-line jsTest-address-lineField "><span
                     class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_234_postal"
-                      name="q234_address234[postal]" class="form-textbox form-address-postal" data-defaultvalue=""
+                      name="add_pin" class="form-textbox form-address-postal" data-defaultvalue=""
                       autoComplete="section-input_234 postal-code" value="" data-component="zip"
                       aria-labelledby="label_234 sublabel_234_postal" required="" /><label class="form-sub-label"
                       for="input_234_postal" id="sublabel_234_postal" style="min-height:13px" aria-hidden="false">Postal
@@ -628,7 +611,7 @@
         <li class="form-line" data-type="control_dropdown" id="id_232"><label class="form-label form-label-left"
             id="label_232" for="input_232"> Marital Status </label>
           <div id="cid_232" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_232"
-              name="q232_maritalStatus232" style="width:310px" data-component="dropdown" aria-label="Marital Status">
+              name="merital" style="width:310px" data-component="dropdown" aria-label="Marital Status">
               <option value="">Please Select</option>
               <option value="Single">Single</option>
               <option value="Married">Married</option>
@@ -643,10 +626,10 @@
           <div id="cid_262" class="form-input" data-layout="full">
             <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_262"
               data-component="radio"><span class="form-radio-item"><span class="dragger-item"></span><input type="radio"
-                  aria-describedby="label_262" class="form-radio" id="input_262_0" name="q262_isThe"
+                  aria-describedby="label_262" class="form-radio" id="input_262_0" name="age"
                   value="Yes" /><label id="label_input_262_0" for="input_262_0">Yes</label></span><span
                 class="form-radio-item"><span class="dragger-item"></span><input type="radio"
-                  aria-describedby="label_262" class="form-radio" id="input_262_1" name="q262_isThe" value="No" /><label
+                  aria-describedby="label_262" class="form-radio" id="input_262_1" name="age" value="No" /><label
                   id="label_input_262_1" for="input_262_1">No</label></span></div>
           </div>
         </li>
@@ -655,13 +638,13 @@
             Name </label>
           <div id="cid_263" class="form-input always-hidden" data-layout="full">
             <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
-                data-input-type="first"><input type="text" id="first_263" name="q263_parentName[first]"
+                data-input-type="first"><input type="text" id="first_263" name="p_fname"
                   class="form-textbox" data-defaultvalue="" autoComplete="section-input_263 given-name" size="10"
                   value="" data-component="first" aria-labelledby="label_263 sublabel_263_first" /><label
                   class="form-sub-label" for="first_263" id="sublabel_263_first" style="min-height:13px"
                   aria-hidden="false">First Name</label></span><span class="form-sub-label-container"
                 style="vertical-align:top" data-input-type="last"><input type="text" id="last_263"
-                  name="q263_parentName[last]" class="form-textbox" data-defaultvalue=""
+                  name="p_lname" class="form-textbox" data-defaultvalue=""
                   autoComplete="section-input_263 family-name" size="15" value="" data-component="last"
                   aria-labelledby="label_263 sublabel_263_last" /><label class="form-sub-label" for="last_263"
                   id="sublabel_263_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
@@ -671,10 +654,10 @@
           id="id_264"><label class="form-label form-label-left form-label-auto" id="label_264" for="input_264_full">
             Phone Number </label>
           <div id="cid_264" class="form-input always-hidden" data-layout="half"> <span class="form-sub-label-container"
-              style="vertical-align:top"><input type="tel" id="input_264_full" name="q264_phoneNumber[full]"
+              style="vertical-align:top"><input type="tel" id="input_264_full" name="p_number"
                 data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue=""
                 autoComplete="section-input_264 tel-national" style="width:310px" data-masked="true" value=""
-                placeholder="(000) 000-0000" data-component="phone"
+                placeholder="" data-component="phone"
                 aria-labelledby="label_264 sublabel_264_masked" /><label class="form-sub-label" for="input_264_full"
                 id="sublabel_264_masked" style="min-height:13px" aria-hidden="false">Please enter a valid phone
                 number.</label></span> </div>
@@ -690,13 +673,13 @@
             id="label_13" for="first_13"> Emergency Contact </label>
           <div id="cid_13" class="form-input" data-layout="full">
             <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
-                data-input-type="first"><input type="text" id="first_13" name="q13_emergencyContact13[first]"
+                data-input-type="first"><input type="text" id="first_13" name="emergency_Contact_fname"
                   class="form-textbox" data-defaultvalue="" autoComplete="section-input_13 given-name" size="10"
                   value="" data-component="first" aria-labelledby="label_13 sublabel_13_first" /><label
                   class="form-sub-label" for="first_13" id="sublabel_13_first" style="min-height:13px"
                   aria-hidden="false">First Name</label></span><span class="form-sub-label-container"
                 style="vertical-align:top" data-input-type="last"><input type="text" id="last_13"
-                  name="q13_emergencyContact13[last]" class="form-textbox" data-defaultvalue=""
+                  name="emergency_Contact_lname" class="form-textbox" data-defaultvalue=""
                   autoComplete="section-input_13 family-name" size="15" value="" data-component="last"
                   aria-labelledby="label_13 sublabel_13_last" /><label class="form-sub-label" for="last_13"
                   id="sublabel_13_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
@@ -705,17 +688,17 @@
         <li class="form-line" data-type="control_textbox" id="id_73"><label class="form-label form-label-left"
             id="label_73" for="input_73"> Relationship </label>
           <div id="cid_73" class="form-input" data-layout="half"> <input type="text" id="input_73"
-              name="q73_relationship" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              name="relationship" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
               style="width:310px" size="310" value="" placeholder=" " data-component="textbox"
               aria-labelledby="label_73" /> </div>
         </li>
         <li class="form-line" data-type="control_phone" id="id_74"><label class="form-label form-label-left"
             id="label_74" for="input_74_full"> Contact Number </label>
           <div id="cid_74" class="form-input" data-layout="half"> <span class="form-sub-label-container"
-              style="vertical-align:top"><input type="tel" id="input_74_full" name="q74_contactNumber74[full]"
-                data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue=""
+              style="vertical-align:top"><input type="tel" id="input_74_full" name="contact_Number"
+                data-type="mask-number" class="mask-phone-number form-textbox validate" data-defaultvalue=""
                 autoComplete="section-input_74 tel-national" style="width:310px" data-masked="true" value=""
-                placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_74" /></span> </div>
+                placeholder="" data-component="phone" aria-labelledby="label_74" /></span> </div>
         </li>
         
        
@@ -728,35 +711,35 @@
           </div>
         </li>
         <li class="form-line fixed-width" data-type="control_textbox" id="id_252"><label
-            class="form-label form-label-left form-label-auto" id="label_252" for="input_252"> Reason for Registration
+            class="form-label form-label-left form-label-auto" id="label_252" for="input_252">Privious health condition
           </label>
           <div id="cid_252" class="form-input" data-layout="half"> <input type="text" id="input_252"
-              name="q252_reasonFor" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+              name="health_history" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
               style="width:620px" size="620" value="" placeholder=" " data-component="textbox"
               aria-labelledby="label_252" /> </div>
         </li>
         <li class="form-line" data-type="control_textarea" id="id_255"><label
             class="form-label form-label-left form-label-auto" id="label_255" for="input_255"> Additional Notes </label>
           <div id="cid_255" class="form-input" data-layout="full"> <textarea id="input_255" class="form-textarea"
-              name="q255_additionalNotes" style="width:648px;height:163px" data-component="textarea"
+              name="additional_notes" style="width:648px;height:163px" data-component="textarea"
               aria-labelledby="label_255"></textarea> </div>
         </li>
         <li class="form-line" data-type="control_radio" id="id_43"><label class="form-label form-label-left"
-            id="label_43" for="input_43"> Taking any medications, currently? </label>
+            id="label_43" for="input_43">  Do you have any medical condition? </label>
           <div id="cid_43" class="form-input" data-layout="full">
             <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_43"
               data-component="radio"><span class="form-radio-item"><span class="dragger-item"></span><input type="radio"
-                  aria-describedby="label_43" class="form-radio" id="input_43_0" name="q43_takingAny"
+                  aria-describedby="label_43" class="form-radio" id="input_43_0" name="perement_illness"
                   value="Yes" /><label id="label_input_43_0" for="input_43_0">Yes</label></span><span
                 class="form-radio-item"><span class="dragger-item"></span><input type="radio"
-                  aria-describedby="label_43" class="form-radio" id="input_43_1" name="q43_takingAny"
+                  aria-describedby="label_43" class="form-radio" id="input_43_1" name="perement_illness"
                   value="No" /><label id="label_input_43_1" for="input_43_1">No</label></span></div>
           </div>
         </li>
         <li class="form-line form-field-hidden" style="display:none;" data-type="control_textarea" id="id_22"><label
-            class="form-label form-label-top" id="label_22" for="input_22"> Please list them here </label>
+            class="form-label form-label-top" id="label_22" for="input_22"> Discription </label>
           <div id="cid_22" class="form-input-wide" data-layout="full"> <textarea id="input_22" class="form-textarea"
-              name="q22_pleaseList" style="width:648px;height:163px" data-component="textarea"
+              name="discription_illness" style="width:648px;height:163px" data-component="textarea"
               aria-labelledby="label_22"></textarea> </div>
         </li>
         <li id="cid_266" class="form-input-wide" data-type="control_head">
@@ -779,7 +762,7 @@
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">
           <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button
-            id="input_2" type="submit"
+            id="input_2" type="submit" name="submit"
             class="form-submit-button form-submit-button-simple_black submit-button jf-form-buttons jsTest-submitField"
             data-component="button" data-content="">Register</button></div>
           </div>
@@ -789,15 +772,6 @@
       
     </div>
       
-      <script>
-        JotForm.poweredByText = "Powered by Jotform";
-        </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="232371540161446" />
-    <script type="text/javascript">
-      var all_spc = document.querySelectorAll("form[id='232371540161446'] .si" + "mple" + "_spc");
-      for (var i = 0; i < all_spc.length; i++) {
-        all_spc[i].value = "232371540161446-232371540161446";
-      }
-      </script>
   </form>
 </body>
 
