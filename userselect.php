@@ -7,7 +7,7 @@ include ('src/php/dbconnect.php');
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - bootstrap 4 navbar</title>
+    <title>User Select</title>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -37,7 +37,7 @@ include ('src/php/dbconnect.php');
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
                 </li>
                 <li class="nav-item">
@@ -46,8 +46,8 @@ include ('src/php/dbconnect.php');
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)" ;><i class="fa fa-sign-in"></i>LogIn</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-sign-in"></i>LogIn</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="fa fa-pencil-square-o"></i>Register</a>
@@ -68,14 +68,14 @@ include ('src/php/dbconnect.php');
                     <span class="circle"></span>
                     <span class="subject">Doctor</span>
                 </div>
-                <img src="/src/pic/doctor.png" alt="" srcset="" style="width: 46px; margin-right: 3px;">
+                <img src="src/pic/doctor.png" alt="" srcset="" style="width: 46px; margin-right: 3px;">
             </label>
             <label for="two" class="box second">
                 <div class="course">
                     <span class="circle"></span>
                     <span class="subject">Patient</span>
                 </div>
-                <img src="/src/pic/patient.png" alt="" srcset="" style="width: 46px;">
+                <img src="src/pic/patient.png" alt="" srcset="" style="width: 46px;">
 
             </label>
             <label for="three" class="box third">
@@ -83,7 +83,7 @@ include ('src/php/dbconnect.php');
                     <span class="circle"></span>
                     <span class="subject">Sttaf/nurse</span>
                 </div>
-                <img src="/src/pic/nurse.png" alt="" srcset="" style="width: 46px;
+                <img src="src/pic/nurse.png" alt="" srcset="" style="width: 46px;
             margin-right: 5px;;">
             </label>
         </div>
@@ -91,25 +91,20 @@ include ('src/php/dbconnect.php');
 
 
     </div>
-    <div style="  position: relative;
+    <div onclick="goTo()" style="position: relative;
     top: 149px;
     left: 637px;
-    width: fit-content;
+    width:fit-content;
 ">
-        <input class="btn btn-primary" type="submit" value="Submit" name="submit" style="background: #5161ce;width: 135px;" fdprocessedid="igf4c">
-        <?php 
-        if (isset($_POST['submit'])){
-        header("Location: patient.php");
-    }
-    ?>
+        <input class="btn btn-primary" type="submit" value="submit" name="submit" style="background: #5161ce;width: 135px;" fdprocessedid="igf4c">
     </div>
     <!-- partial -->
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
-    <script src="/src/js/main.js"></script>
+    <script src="src/js/main.js"></script>
     </script>
-    <script src="/src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
 
 </body>
 

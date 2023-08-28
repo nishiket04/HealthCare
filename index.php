@@ -31,7 +31,7 @@ include('src/php/dbconnect.php');
           <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
           </li>
           <li class="nav-item">
@@ -40,8 +40,8 @@ include('src/php/dbconnect.php');
           <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)"; onclick="location.href='login.html'"><i class="fa fa-sign-in"></i>LogIn</a>
+          <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0);"><i class="fa fa-sign-in"></i>LogIn</a>
           </li>
           <!-- <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);"><i class="fa fa-pencil-square-o"></i>Register</a>
