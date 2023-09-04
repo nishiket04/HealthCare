@@ -56,13 +56,15 @@ include ('src/php/dbconnect.php');
         </div>
     </nav>
 
+    
     <div class="card">
         <div class="title" style="color: white;">Are You ?</div>
         <div class="content">
-            <input type="radio" name="box" id="one" />
-            <input type="radio" name="box" id="two" />
-            <input type="radio" name="box" id="three" />
-
+        <form action="src/php/toform.php" method="POST">
+            <input type="radio" name="box" value="doc" id="one" />
+            <input type="radio" name="box" value="pat" id="two" />
+            <input type="radio" name="box" value="stff" id="three" />
+            
             <label for="one" class="box first">
                 <div class="course">
                     <span class="circle"></span>
@@ -86,27 +88,29 @@ include ('src/php/dbconnect.php');
                 <img src="src/pic/nurse.png" alt="" srcset="" style="width: 46px;
             margin-right: 5px;;">
             </label>
+           
         </div>
     </div>
 
 
     </div>
-    <div onclick="goTo()" style="position: relative;
+    <div style="position: relative;
     top: 149px;
     left: 637px;
     width:fit-content;
 ">
-        <input class="btn btn-primary" type="submit" value="submit" name="submit" style="background: #5161ce;width: 135px;" fdprocessedid="igf4c">
+        
+       <input class="btn btn-primary" type="submit" value="submit" name="submit" style="background: #5161ce;width: 135px;" fdprocessedid="igf4c">
+       
     </div>
+    </form>
     <!-- partial -->
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
     <script src="src/js/main.js"></script>
-    </script>
+    
     <script src="src/js/script.js"></script>
-
-</body>
 
 </body>
 

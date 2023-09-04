@@ -19,9 +19,7 @@ if (isset($_POST['submit'])) {
   if ($count >= 1) {
     $_SESSION['email'] = $email;
     $_SESSION['logindatabase'] = 'true';
-
-    // include "../student_portal/studentportal.php?email=<?php echo $email;
-    // header('location:../student_portal/studentportal.php?email=
+    header("Location: ../../doctor.php");
     ?>
     <script>
       alert('Login Successfully');

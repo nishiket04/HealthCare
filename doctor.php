@@ -55,7 +55,6 @@ include('src/php/dbconnect.php');
         </div>
     </nav>
  <!-- Left Para & Button -->
- 
   <button onclick="runSpeechRecog()">Speech</button>
         <h3 id="output" class="hide"></h3>
         <script>
